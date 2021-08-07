@@ -1,0 +1,13 @@
+# Exclude data
+data/
+
+# Ignore DS_Store
+.DS_Store
+._.DS_Store
+
+# Ignore Pycache
+__pycache__/
+
+# Ignore ipynb
+ipynb_checkpoints/
+idea/
