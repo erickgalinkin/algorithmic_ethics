@@ -23,11 +23,19 @@ The identified harm is unintentional denigration -- the objectification of the f
 
 ### Recommendation for Self-Grading
 Although this harm may not be completely systematic, it demonstrates that the harm has not been fully redressed, leading to unintentional denigration on a marginalized community. 
+
 Base Point allocation -- Unintentional Denigration: 20 points
+
 Impact -- Harm on a single axis of identity (gender): x 1.2
+
 Affected Users -- more than 1 million: x 1.2
+
 Likelihood -- occurs daily: x 1.3
+
 Exploitability -- No skills needed: 1.3
+
 Justification -- Well motivated methodology and justification: x1.25
+
 Clarity of contribution -- Some evidence of harm but not conclusive: x1.0
+
 Final score: 20 * (1.2 * 1.2 * 1.3 * 1.3 * 1.25) = 60.84
