@@ -22,7 +22,7 @@ files = ['facescrub_actors.txt', 'facescrub_actresses.txt']
 crop_path = join("../bin", "linux", "candidate_crops")
 model_path = join("../bin", "fastgaze.vxm")
 
-eval_size = 20000
+# eval_size = 20000
 
 def build_facrscrub_dataframe(source, files):
     names = list()
@@ -104,7 +104,7 @@ def create_pairs(df):
 
     # We need to randomly decide whether the male or female image is on the left, so we'll just use an RNG.
     # There are definitely more efficient and pythonic ways to do it but whatever.
-    for i in range(eval_size):
+    for i in range(len(female_df)):
         if random.randint == 0:
             img1 = male_df["image"].iloc[i]
             gender1 = "m"
@@ -131,9 +131,9 @@ def plot_counts(counts):
 
 
 if __name__ == "__main__":
-    pbar = tqdm(total=eval_size)
     data = build_facrscrub_dataframe(data_dir, files)
     tasks = create_pairs(data)
+    pbar = tqdm(total=len(tasks))
     pool_size = multiprocessing.cpu_count()
     pool = multiprocessing.Pool(processes=pool_size)
     results = pool.starmap(gender_salience, tasks)

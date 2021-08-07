@@ -9,5 +9,5 @@ data/
 __pycache__/
 
 # Ignore ipynb
-ipynb_checkpoints/
-idea/
+.ipynb_checkpoints/
+.idea/
